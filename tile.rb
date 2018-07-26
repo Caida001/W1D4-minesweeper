@@ -24,5 +24,9 @@ class Tile
 
   def is_bomb?
     @bomb
-  end 
+  end
+
+  def to_s
+    revealed? ? val.to_s : " "
+  end
 end
